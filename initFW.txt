@@ -1,0 +1,4 @@
+<script src="fwAges.js"></script>
+<script type="text/javascript">
+  new Age("aaaa/mm/dd", "#seletor");
+</script>
