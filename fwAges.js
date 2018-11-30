@@ -15,10 +15,6 @@ class DateConversor {
       this.currentDate.getDate() >= this.userDate.getDate() &&
       this.currentDate.getMonth() + 1 >= this.userDate.getMonth() + 1
     ) {
-      console.log(this.currentDate.getDate());
-      console.log(this.userDate.getDate());
-      console.log(this.currentDate.getMonth() + 1);
-      console.log(this.userDate.getMonth() + 1);
       return this.currentDate.getFullYear() - this.userDate.getFullYear();
     } else {
       return this.currentDate.getFullYear() - this.userDate.getFullYear() - 1;

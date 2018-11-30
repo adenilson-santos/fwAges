@@ -25,6 +25,8 @@
         min-height: 100vh;
         font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
           "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+        padding: 20px 10px;
       }
 
       body strong {
@@ -40,10 +42,20 @@
 
       ul li {
         margin: 10px;
+        display: flex;
+        flex-direction: column;
       }
 
       ul {
         margin-bottom: 20px;
+      }
+
+      ul li span {
+        padding: 20px;
+        background: #f0efe7;
+        color: gray;
+        text-shadow: none;
+        margin-top: 10px;
       }
 
       article {
@@ -63,18 +75,23 @@
       }
 
       @media only screen and (max-width: 700px) {
-        body {
-          padding: 20px 10px;
-        }
-
         body a {
           font-size: 17px;
+        }
+
+        strong:last-child {
+          font-size: 40px;
         }
 
         #links a {
           padding: 5px 10px;
           margin: 10px;
           font-size: 20px;
+        }
+
+        ul li span {
+          padding: 10px;
+          font-size: 15px;
         }
       }
     </style>
@@ -97,10 +114,18 @@
       <h3>Funcionamento:</h3>
 
       <ul>
-        <li>Baixe o arquivo fwAges.js e instale em seu projeto.</li>
+        <li>
+          Baixe o arquivo <strong>fwAges.js</strong> e instale em seu projeto.
+        </li>
         <li>
           Em seguida use os scripts contidos no arquivo initFW.txt em seu código
           html
+          <span>
+            &ltscript src="fwAges.js"&gt &lt/script&gt <br />
+            &ltscript type="text/javascript"&gt <br />
+            &nbsp;&nbsp;&nbsp; new Age("aaaa/mm/dd", "#seletor"); <br />
+            &lt/script&gt
+          </span>
         </li>
         <li>
           Mude agora a linha:
