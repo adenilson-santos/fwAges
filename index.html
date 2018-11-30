@@ -59,11 +59,18 @@
         text-shadow: none;
         margin: 20px;
         background: #fff;
-        border-radius: 20px;
         padding: 10px 20px;
       }
 
-      @media only screen and (max-width: 500px) {
+      @media only screen and (max-width: 700px) {
+        body {
+          padding: 20px 10px;
+        }
+
+        body a {
+          font-size: 17px;
+        }
+
         #links a {
           padding: 5px 10px;
           margin: 10px;
@@ -92,12 +99,15 @@
       <ul>
         <li>Baixe o arquivo fwAges.js e instale em seu projeto.</li>
         <li>
-          Em seguida use os scripts contidos no arquivo html initFW.txt em seu
-          código html
+          Em seguida use os scripts contidos no arquivo initFW.txt em seu código
+          html
         </li>
         <li>
-          Mude agora a linha: new Age("aaaa/mm/dd", "#seletor"); Ex: new
-          Age("1997/11/04", "#ages");
+          Mude agora a linha:
+          <blockquote>
+            new Age("aaaa/mm/dd", "#seletor"); Ex: new Age("1997/11/04",
+            "#ages");
+          </blockquote>
         </li>
       </ul>
     </article>
