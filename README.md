@@ -11,4 +11,8 @@ Funcionamento:
 
 - Baixe o arquivo fwAges.js e instale em seu projeto.
 - Em seguida use os scripts contidos no arquivo html initFW.txt em seu código html
-- Mude agora a linha: new Age("aaaa/mm/dd", "#seletor"); Ex: new Age("1997/11/04", "#ages");
+- Mude agora a linha:
+
+```
+new Age("aaaa/mm/dd", "#seletor"); Ex: new Age("1997/11/04", "#ages");
+```
