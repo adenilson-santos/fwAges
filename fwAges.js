@@ -12,8 +12,9 @@ class DateConversor {
 
   conversor() {
     if (
-      this.currentDate.getDate() >= this.userDate.getDate() &&
-      this.currentDate.getMonth() + 1 >= this.userDate.getMonth() + 1
+      (this.currentDate.getDate() >= this.userDate.getDate() &&
+        this.currentDate.getMonth() + 1 >= this.userDate.getMonth() + 1) ||
+      this.currentDate.getMonth() + 1 > this.userDate.getMonth() + 1
     ) {
       return this.currentDate.getFullYear() - this.userDate.getFullYear();
     } else {
